@@ -67,6 +67,13 @@ public class LogRepository {
 		
 		String insertAccessLog = "insert into accesslog (dtlog, ipaddress, httpmethod, httpreturncode, logdescription) values";
 		sbuilderMultiInsert = new StringBuilder(insertAccessLog);
+
+		pst = connWallet.prepareStatement("truncate table accesslog");
+		executeUpdateInt = pst.executeUpdate();
+
+		System.out.println("Truncate successfully executed!");
+		executeUpdateInt = 0;
+
 		for (String accessLogLine : logFileList) {
 			stzMultInsert = new StringTokenizer(accessLogLine, "|");
 			
@@ -159,7 +166,7 @@ public class LogRepository {
 			.append(String.valueOf(threshold))
 			.append(")");
 
-		System.out.println(sblQuery.toString());
+		//System.out.println(sblQuery.toString());
 		queryLogResultSet = connWallet.prepareStatement(sblQuery.toString()).executeQuery();
 		while(queryLogResultSet.next()) {
 			queryLogList.add(queryLogResultSet.getDate("dtlog") + " | " 
