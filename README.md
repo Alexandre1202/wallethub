@@ -11,7 +11,7 @@ Optimized queries to retrieve data
 ![Benchmark evidence for MacOS High Sierra](wallethub-benchmark-localhost.jpeg)
 
 ## Pre-reqs
-Java 8
-MySQL 5.7
-Maven
-accesslog (separated file)
+#### Java 8
+#### MySQL 5.7
+#### Maven
+#### accesslog (separated file)
