@@ -7,7 +7,7 @@
 ### Faster Insert to database
 Optimized queries to retrieve data
 
-[Benchmark evidence for MacOS I5](http://github.com/alexandre1202/wallethub/wallethub-benchmark-localhost.jpeg)
+[Benchmark evidence for MacOS I5](https://github.com/Alexandre1202/wallethub/blob/master/wallethub-benchmark-localhost.jpeg)
 
 ## Pre-reqs
 Java 8
