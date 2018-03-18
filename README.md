@@ -7,8 +7,8 @@ Benchmark to upload 116.484 lines to MySQL table and execute a sub query with cr
 ## Faster Insert to database
 Optimized queries to retrieve data
 
-[Benchmark evidence for MacOS I5]()
-![GitHub Logo](wallethub-benchmark-localhost.jpeg)
+#Benchmark evidence for MacOS High Sierra
+![Benchmark evidence for MacOS High Sierra](wallethub-benchmark-localhost.jpeg)
 
 ## Pre-reqs
 Java 8
